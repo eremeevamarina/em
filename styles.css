@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Для экранов шириной до 768px (планшеты и мобильные) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Меню в колонку */
+    }
+
+    .products {
+        flex-direction: column; /* Продукты в одну колонку */
+    }
+
+    .product {
+        margin-bottom: 20px; /* Расстояние между карточками */
+    }
+}
+
+/* Для экранов шириной до 480px (маленькие смартфоны) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Уменьшение размера заголовка */
+    }
+
+    .product button {
+        padding: 10px; /* Уменьшение кнопок */
+    }
+}
